@@ -1,1 +1,43 @@
-<p>timer works!</p>
+<div class="timer">
+    <div class="timer-title">
+        {{data.name}}
+    </div>
+    <div class="tomato">
+        <!-- <img src="../../assets/tomato.svg" alt=""> -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-10 10 505 495"
+            xml:space="preserve" style.stroke="{{svg.color}}" stroke-width="10px" fill="transparent"
+            style.stroke-dasharray="{{svg.total}}" style.stroke-dashoffset="{{svg.current}}">
+            <g>
+                <path
+                    d="M305.966,53.767c-16.556,0-32.781,2.23-48.466,6.64V9.698h-30v50.708c-15.685-4.41-31.91-6.64-48.466-6.64
+		C80.314,53.767,0,134.081,0,232.801c0,64.774,25.225,125.671,71.027,171.474s106.699,71.027,171.473,71.027
+		c64.774,0,125.671-25.225,171.474-71.027C459.775,358.473,485,297.576,485,232.801C485,134.081,404.686,53.767,305.966,53.767z
+		 M242.5,445.302c-117.173,0-212.5-95.327-212.5-212.5c0-82.178,66.856-149.034,149.034-149.034c10.559,0,20.952,1.097,31.103,3.253
+		l-45.426,34.062l17.997,24.002l44.792-33.586v60.004h30v-60.004l44.792,33.586l17.997-24.002L274.863,87.02
+		c10.151-2.156,20.543-3.253,31.103-3.253C388.144,83.767,455,150.623,455,232.801C455,349.974,359.673,445.302,242.5,445.302z" />
+            </g>
+        </svg>
+        <div class="remain">
+            Duration: {{data.duration}} min
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="repeat">
+            Repeat: {{data.repeat}}
+        </div>
+        <div class="rest">
+            Rest: {{data.rest}} min
+        </div>
+    </div>
+
+    <div class="row">
+        <button class="run" [disabled]="isRunning" (click)="run()">
+            Run
+        </button>
+        <button class="stop" [disabled]="!isRunning" (click)="stop()">
+            Stop
+        </button>
+    </div>
+
+</div>

@@ -1,1 +1,56 @@
-<p>config works!</p>
+<div class="config-container">
+
+
+    <div class="config">
+
+        <div class="row">
+            <label for="">
+                Activity
+                <input type="text" [(ngModel)]="activity.name">
+            </label>
+
+            <label for="">
+                Duration (minutes)
+                <input type="number" [(ngModel)]="activity.duration">
+            </label>
+        </div>
+
+        <div class="row">
+            <label for="">
+                Repeat (times)
+                <input type="number" [(ngModel)]="activity.repeat">
+            </label>
+
+            <label for="">
+                Rest (minutes)
+                <input type="number" [(ngModel)]="activity.rest">
+            </label>
+        </div>
+
+        <div class="row">
+            <button (click)="addActivity()">
+                Add Activity
+            </button>
+        </div>
+
+    </div>
+
+    <div class="config-items">
+
+        <div class="item" *ngFor="let activity of activityList; let i = index">
+            <div class=" content">
+                <div class="item-title">
+                    {{activity.name}}
+                </div>
+                <div class="item-info">
+                    Duration {{activity.duration}}min | Repeat {{activity.repeat}} times | Rest {{activity.rest}} min
+                </div>
+            </div>
+            <div class="delete" (click)="deleteActivity(i)">
+                <span>X</span>
+            </div>
+        </div>
+
+
+    </div>
+</div>

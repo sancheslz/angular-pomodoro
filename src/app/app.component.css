@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5em;
+    height: 2.3em;
+    background-color: rgb(233, 162, 32);
+    border: 2px solid rgb(214, 149, 29);
+    cursor: pointer;
+    color: white;
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: rgb(214, 149, 29);;
+}

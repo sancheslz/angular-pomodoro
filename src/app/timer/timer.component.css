@@ -1,0 +1,87 @@
+.timer {
+    border: 1px solid black;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 3px black;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.timer-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.tomato {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.remain {
+    margin-bottom: 1em;
+}
+
+svg {
+    width: 150px;
+    height: 150px;
+}
+
+.row {
+    display: flex;
+    justify-content: stretch;
+}
+
+.row div, .row button {
+    flex: 1;
+    font-size: 0.8em;
+}
+
+.row div~div {
+    border-left: 1px solid black;
+}
+
+.repeat {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.rest {
+    padding-left: 1em;
+}
+
+button {
+    margin-top: 1em;
+    color: white;
+    height: 2em;
+    border: none;
+    cursor: pointer;
+}
+
+button.run {
+    background-color: rgb(58, 209, 58);
+}
+
+button.run:hover {
+    background-color: rgb(49, 179, 49);
+}
+
+button.stop {
+    background-color: rgb(241, 77, 77);
+}
+
+button.stop:hover {
+    background-color: rgb(206, 65, 65);
+}
+
+button:disabled {
+    cursor: default;
+    background-color: lightgray;
+    color: black;
+}
+
+button:disabled:hover {
+    cursor: default;
+    background-color: lightgray;
+    color: black;
+}

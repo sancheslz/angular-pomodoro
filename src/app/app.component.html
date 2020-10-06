@@ -1,0 +1,5 @@
+<button (click)="isConfig = !isConfig" *ngIf="!isConfig">Config</button>
+<button (click)="isConfig = !isConfig" *ngIf="isConfig">Pomodoro</button>
+
+<app-config *ngIf="isConfig" [activityList]="activityList"></app-config>
+<app-timer *ngIf="!isConfig" [activityList]="activityList"></app-timer>

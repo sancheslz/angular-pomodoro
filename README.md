@@ -1,27 +1,37 @@
 # Pomodoro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+A Simple Pomodoro created in Angular 10 during the Front End Bootcamp of IGTI
 
-## Development server
+## Technologies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![Badge](https://img.shields.io/static/v1?label=structure&message=HTML5&color=E34F26&style=flat)
+![Badge](https://img.shields.io/static/v1?label=style&message=CSS3&color=1572B6&style=flat)
+![Badge](https://img.shields.io/static/v1?label=images&message=SVG&color=FFB13B&style=flat)
+![Badge](https://img.shields.io/static/v1?label=logic&message=TypeScript&color=007ACC&style=flat)
+![Badge](https://img.shields.io/static/v1?label=framework&message=Angular+10&color=DD0031&style=flat)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Preview
 
-## Build
+![TicTactoe Screenshot](pomodoro.gif)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Goals
 
-## Running unit tests
+- Work with dependence injection
+- Allow user to create activities
+- Run each activity and its rest time
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How it works
 
-## Running end-to-end tests
+The project has four important files:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- `activity-interface.ts`: responsible by the structure of an activity
+- `app.component.ts`: stores the list of activities created in `config.component`
+- `config.component.ts`: allows the user to create a list of activities
+- `timer.component.ts`: responsible to execute the pomodoro
 
-## Further help
+The most important logic of the project is in `timer.component`. Here there are the control of execution of the list. When an activity runs, the red line of the image disappear with time. In rest interval a blue line appear and when it finishes start a new pomodoro.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Final Notes
+
+An improvement idea is create tomato thumbnails to represent the repetition of the activity and as it runs, these thumbnails disappear.
