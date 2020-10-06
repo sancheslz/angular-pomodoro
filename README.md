@@ -10,7 +10,6 @@ A Simple Pomodoro created in Angular 10 during the Front End Bootcamp of IGTI
 ![Badge](https://img.shields.io/static/v1?label=logic&message=TypeScript&color=007ACC&style=flat)
 ![Badge](https://img.shields.io/static/v1?label=framework&message=Angular+10&color=DD0031&style=flat)
 
-
 ## Preview
 
 ![TicTactoe Screenshot](pomodoro.gif)
